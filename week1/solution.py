@@ -6,8 +6,9 @@ from openai import OpenAI
 from scraper import fetch_website_contents
 
 OLLAMA_BASE_URL = "http://localhost:11434/v1"
-MODEL = "llama3.2"
+MODEL = "llama3.2:1b"
 
+MODEL = "deepseek-r1:1.5b"
 system_prompt = """
 You are a snarky assistant that analyzes the contents of a website,
 and provides a short, snarky, humorous summary, ignoring text that might be navigation related.
